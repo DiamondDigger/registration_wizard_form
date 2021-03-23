@@ -24,13 +24,9 @@ export const ConfirmWrapper = styled.div`
 `;
 
 export const Header = styled.p`
-  display: flex;
-  justify-content: flex-start;
   font-weight: bolder;
   font-size: 1.2rem;
 `;
 export const Text = styled.p`
-  /* display: flex; */
-  /* justify-content: flex-start; */
   font-size: 0.8rem;
 `;

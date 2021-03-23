@@ -3,12 +3,12 @@ import Areas from "./Steps/Areas";
 import ContactInfo from "./Steps/ContactInfo";
 import Completed from "./Steps/Completed";
 
-const StepSection = () => {
+const StepSection = ({ state, handleInput }) => {
   return (
     <div>
       {/* <Areas /> */}
-      {/* <ContactInfo /> */}
-      <Completed />
+      <ContactInfo state={state} handleIput={handleInput} />
+      {/* <Completed /> */}
     </div>
   );
 };

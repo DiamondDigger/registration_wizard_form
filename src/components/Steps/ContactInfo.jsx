@@ -11,7 +11,7 @@ import {
   StyledP,
 } from "../../styles/StyledContactInfo";
 
-const ContactInfo = () => {
+const ContactInfo = ({ state, handleIput }) => {
   return (
     <Wrapper>
       <SectionOne>
@@ -59,7 +59,14 @@ const ContactInfo = () => {
             <StyledLabel htmlFor="last_name">*Last Name:</StyledLabel>
           </LabelWrapper>
           <FieldWrapper>
-            <StyledInput type="text" id="last_name" name="last_name" required />
+            <StyledInput
+              type="text"
+              id="last_name"
+              name="last_name"
+              required
+              onChange={handleIput}
+              value={state.name}
+            />
           </FieldWrapper>
         </InputWrapper>
         <InputWrapper>
@@ -67,7 +74,14 @@ const ContactInfo = () => {
             <StyledLabel htmlFor="company">*Company:</StyledLabel>
           </LabelWrapper>
           <FieldWrapper>
-            <StyledInput type="text" id="company" name="company" required />
+            <StyledInput
+              type="text"
+              id="company"
+              name="company"
+              required
+              onChange={handleIput}
+              value={state.name}
+            />
           </FieldWrapper>
         </InputWrapper>
         <InputWrapper>
@@ -75,7 +89,14 @@ const ContactInfo = () => {
             <StyledLabel htmlFor="title">*Title:</StyledLabel>
           </LabelWrapper>
           <FieldWrapper>
-            <StyledInput type="text" id="title" name="title" required />
+            <StyledInput
+              type="text"
+              id="title"
+              name="title"
+              required
+              onChange={handleIput}
+              value={state.name}
+            />
           </FieldWrapper>
         </InputWrapper>
       </SectionOne>
@@ -85,7 +106,14 @@ const ContactInfo = () => {
             <StyledLabel htmlFor="email">*Email:</StyledLabel>
           </LabelWrapper>
           <FieldWrapper>
-            <StyledInput type="email" id="email" name="email" required />
+            <StyledInput
+              type="email"
+              id="email"
+              name="email"
+              required
+              onChange={handleIput}
+              value={state.name}
+            />
             <StyledP>Email will be your login</StyledP>
           </FieldWrapper>
         </InputWrapper>
@@ -99,6 +127,8 @@ const ContactInfo = () => {
               id="confirm_email"
               name="confirm_email"
               required
+              onChange={handleIput}
+              value={state.name}
             />
           </FieldWrapper>
         </InputWrapper>
@@ -113,6 +143,8 @@ const ContactInfo = () => {
               name="phone"
               required
               pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+              onChange={handleIput}
+              value={state.name}
             />
           </FieldWrapper>
         </InputWrapper>
@@ -126,6 +158,8 @@ const ContactInfo = () => {
               id="fax"
               name="fax"
               pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"
+              onChange={handleIput}
+              value={state.name}
             />
           </FieldWrapper>
         </InputWrapper>
@@ -139,6 +173,8 @@ const ContactInfo = () => {
               id="mobile"
               name="mobile"
               pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+              onChange={handleIput}
+              value={state.name}
             />
           </FieldWrapper>
         </InputWrapper>

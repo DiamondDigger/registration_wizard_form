@@ -19,6 +19,12 @@ export const Link = styled.a`
 
 export const ButtonsWrapper = styled.div`
   grid-area: buttons;
+
+  @media screen and (max-width: 500px) {
+    display: flex;
+    justify-content: space-around;
+    height: 25%;
+  }
 `;
 
 export const Button = styled.button`

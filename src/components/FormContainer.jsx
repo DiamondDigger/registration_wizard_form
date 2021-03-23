@@ -2,11 +2,11 @@ import React from "react";
 import AsideMenu from "./AsideMenu";
 import StepSection from "./StepSection";
 
-const FormContainer = () => {
+const FormContainer = ({ state, handleInput }) => {
   return (
     <>
       <AsideMenu />
-      <StepSection />
+      <StepSection state={state} handleInput={handleInput} />
     </>
   );
 };
