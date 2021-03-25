@@ -7,7 +7,7 @@ const StepSection = ({ state, handleInput }) => {
   return (
     <div>
       {/* <Areas /> */}
-      <ContactInfo state={state} handleIput={handleInput} />
+      <ContactInfo state={state} handleInput={handleInput} />
       {/* <Completed /> */}
     </div>
   );
