@@ -4,13 +4,17 @@ import ContactInfo from "./Steps/ContactInfo";
 import Completed from "./Steps/Completed";
 
 const StepSection = ({ state, handleInput }) => {
-  return (
-    <div>
-      {/* <Areas /> */}
-      <ContactInfo state={state} handleInput={handleInput} />
-      {/* <Completed /> */}
-    </div>
-  );
+  switch (state.step) {
+    case 1:
+      return <ContactInfo state={state} handleInput={handleInput} />;
+    case 2:
+      return <Areas state={state} handleInput={handleInput} />;
+    case 3:
+      return <Completed />;
+    default: {
+      return <p>Some component should be here</p>;
+    }
+  }
 };
 
 export default StepSection;
