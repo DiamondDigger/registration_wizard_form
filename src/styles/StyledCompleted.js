@@ -12,9 +12,9 @@ export const Wrapper = styled.div`
 export const IconWrapper = styled.div`
   grid-area: icon;
   display: flex;
-  align-items: center;
   justify-content: center;
   font-size: 3rem;
+  padding: 20px;
   color: green;
 `;
 

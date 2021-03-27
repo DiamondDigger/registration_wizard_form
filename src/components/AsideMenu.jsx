@@ -1,8 +1,27 @@
 import React from "react";
-import { Wrapper } from "../styles/StyledAsideMenu";
+import { Wrapper, StepperWrapper } from "../styles/StyledAsideMenu";
+import Stepper from "./Steps/Stepper";
 
 const AsideMenu = () => {
-  return <Wrapper>Aside Menu</Wrapper>;
+  return (
+    <Wrapper>
+      <StepperWrapper>
+        <Stepper />
+      </StepperWrapper>
+      <StepperWrapper>
+        <Stepper />
+      </StepperWrapper>
+      <StepperWrapper>
+        <Stepper />
+      </StepperWrapper>
+      <StepperWrapper>
+        <Stepper />
+      </StepperWrapper>
+      <StepperWrapper>
+        <Stepper />
+      </StepperWrapper>
+    </Wrapper>
+  );
 };
 
 export default AsideMenu;
