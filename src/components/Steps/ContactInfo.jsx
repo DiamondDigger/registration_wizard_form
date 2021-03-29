@@ -26,7 +26,7 @@ const ContactInfo = ({ state, handleInput }) => {
               name="salutation"
               required
               onChange={handleInput("salutation")}
-              value={state.name}
+              value={state.salutation}
             />
           </FieldWrapper>
         </InputWrapper>
@@ -41,7 +41,7 @@ const ContactInfo = ({ state, handleInput }) => {
               name="first_name"
               required
               onChange={handleInput("first_name")}
-              value={state.name}
+              value={state.first_name}
             />
           </FieldWrapper>
         </InputWrapper>
@@ -56,7 +56,7 @@ const ContactInfo = ({ state, handleInput }) => {
               name="middle_name"
               required
               onChange={() => handleInput("middle_name")}
-              value={state.name}
+              value={state.middle_name}
             />
           </FieldWrapper>
         </InputWrapper>
@@ -71,7 +71,7 @@ const ContactInfo = ({ state, handleInput }) => {
               name="last_name"
               required
               onChange={() => handleInput("last_name")}
-              value={state.name}
+              value={state.last_name}
             />
           </FieldWrapper>
         </InputWrapper>
@@ -86,7 +86,7 @@ const ContactInfo = ({ state, handleInput }) => {
               name="company"
               required
               onChange={() => handleInput("company")}
-              value={state.name}
+              value={state.company}
             />
           </FieldWrapper>
         </InputWrapper>
@@ -101,7 +101,7 @@ const ContactInfo = ({ state, handleInput }) => {
               name="title"
               required
               onChange={() => handleInput("title")}
-              value={state.name}
+              value={state.title}
             />
           </FieldWrapper>
         </InputWrapper>
@@ -118,7 +118,7 @@ const ContactInfo = ({ state, handleInput }) => {
               name="email"
               required
               onChange={() => handleInput("email")}
-              value={state.name}
+              value={state.email}
             />
             <StyledP>Email will be your login</StyledP>
           </FieldWrapper>
@@ -149,7 +149,7 @@ const ContactInfo = ({ state, handleInput }) => {
               required
               pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
               onChange={() => handleInput("phone")}
-              value={state.name}
+              value={state.phone}
             />
           </FieldWrapper>
         </InputWrapper>
@@ -164,7 +164,7 @@ const ContactInfo = ({ state, handleInput }) => {
               name="fax"
               pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"
               onChange={() => handleInput("fax")}
-              value={state.name}
+              value={state.fax}
             />
           </FieldWrapper>
         </InputWrapper>
@@ -179,7 +179,7 @@ const ContactInfo = ({ state, handleInput }) => {
               name="mobile"
               pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
               onChange={() => handleInput("mobile")}
-              value={state.name}
+              value={state.mobile}
             />
           </FieldWrapper>
         </InputWrapper>
