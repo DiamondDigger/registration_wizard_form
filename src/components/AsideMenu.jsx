@@ -2,10 +2,10 @@ import React from "react";
 import { Wrapper } from "../styles/StyledAsideMenu";
 import Stepper from "./Steps/Stepper";
 
-const AsideMenu = () => {
+const AsideMenu = ({ state }) => {
   return (
     <Wrapper>
-      <Stepper />
+      <Stepper state={state} />
     </Wrapper>
   );
 };

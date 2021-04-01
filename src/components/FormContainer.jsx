@@ -5,7 +5,7 @@ import StepSection from "./StepSection";
 const FormContainer = ({ state, handleInput }) => {
   return (
     <>
-      <AsideMenu />
+      <AsideMenu state={state} />
       <StepSection state={state} handleInput={handleInput} />
     </>
   );
